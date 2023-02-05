@@ -16,11 +16,11 @@ export const Header = (props) => {
     <Container>
       <ReturnMenu rtdisplay={props.rtdisplay}>
         <Link to={`/${actualPage || 1}`} className="return">
-          <img className="lt-bullet" src="../icons/lt-arrow.png" alt="logo" />
+          <img className="lt-bullet" src="icons/lt-arrow.png" alt="logo" />
           Todos os Pokemons
         </Link>
       </ReturnMenu>
-      <img src="../logo.png" alt="logo" />
+      <img src="logo.png" alt="logo" />
       <Button
         onClick={props.onClick}
         value={props.label}

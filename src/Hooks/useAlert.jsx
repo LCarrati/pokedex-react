@@ -5,8 +5,8 @@ export const useAlert = (value) => {
 
     const [showAlert, setShowAlert] = useContext(PokeContext)['alertState']
 
-    const add = <img src='../alertCapture.png' style={{ width: "450px", height: "225px" }} />
-    const remove = <img src='../alertRemove.png' style={{ width: "450px", height: "225px" }} />
+    const add = <img src='alertCapture.png' style={{ width: "450px", height: "225px" }} />
+    const remove = <img src='alertRemove.png' style={{ width: "450px", height: "225px" }} />
 
     function lalala() {
         if (value === 'addPokemon') {

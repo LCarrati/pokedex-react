@@ -33,13 +33,13 @@ export const Card = ({ number, name, types, type, photo, onClick, value, bg, col
                     <div className="detail">
                         <ol className="types">
                             {types.map((type) => <li key={type} className="type ${type}">
-                                <img className="typeIcon" src={`../bullets/${type}.png`} alt="" />
+                                <img className="typeIcon" src={`bullets/${type}.png`} alt="" />
                             </li>)}
                         </ol>
                     </div>
                 </div>
                 <div>
-                    <img src="../wing.png" alt="wings" className="wings" />
+                    <img src="wing.png" alt="wings" className="wings" />
                     <img src={photo} alt={name} className="photo" />
                 </div>
                 <div className="bottom">

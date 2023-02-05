@@ -1,5 +1,5 @@
 import {
-  BrowserRouter, //GH_PAGES DO NOT SUPPORT IT (mudar para HashRouter)
+  HashRouter as BrowserRouter, //GH_PAGES DO NOT SUPPORT IT (mudar para HashRouter)
   Routes,
   Route,
 } from 'react-router-dom';

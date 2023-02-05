@@ -124,7 +124,7 @@ export const PokeDetails = () => {
                                 <div className="detail">
                                     <ol className="types">
                                         {pokemon[0]?.types.map((type) => <li key={type} className="type ${type}">
-                                            <img className="typeIcon" src={`../bullets/${type}.png`} alt="" />
+                                            <img className="typeIcon" src={`bullets/${type}.png`} alt="" />
                                         </li>)}
                                     </ol>
                                 </div>
