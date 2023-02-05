@@ -398,7 +398,7 @@ Error generating stack: `+i.message+`
         border-radius: 37.8857px;
         width: 1389.14px;
         height: 663px;
-        background-image: url('../bigWing.png');
+        background-image: url('bigWing.png');
         background-repeat: no-repeat;
         background-position: right;
     }
