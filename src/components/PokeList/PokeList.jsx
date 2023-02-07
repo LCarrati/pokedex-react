@@ -5,6 +5,7 @@ import { Container, NavBtn, Wrapper } from './styles';
 import { useGetPokemons } from '../../Hooks/useGetPokemons';
 import usePagination from '../../Hooks/usePagination';
 import { useParams } from 'react-router-dom';
+import { Skeleton } from '../skeletons/Skeleton';
 
 const PokeList = () => {
 
@@ -46,10 +47,14 @@ const PokeList = () => {
         />
     ))
 
+    const skeletonLoading = (Array.from({ length: limit }, (_, i) => (
+        i
+    ))).map((i) => <Skeleton />)
+
     return (
         <Container>
             <h1>Todos os Pokemons</h1>
-            <Wrapper>{cardList}</Wrapper>
+            <Wrapper>{pokemons.length == limit ? cardList : skeletonLoading}</Wrapper>
             <NavBtn>{pagesButtons?.map((button) => button)}</NavBtn>
         </Container>
     )
